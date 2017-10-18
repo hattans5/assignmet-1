@@ -1,0 +1,121 @@
+#main
+{margin-top: 0px;
+    margin-left: 5px;
+    color: black}
+#date
+{color: gray;}
+
+.line{
+height: 1px;
+width: 650px;
+background-color: black; 
+margin-left: 20px;
+}
+
+
+#mainD{
+ margin: 5px 270px;
+
+ background-color: hsl(0, 10%, 94%);
+padding-top: 1px;
+padding-bottom: 2px;
+}
+
+
+body{
+background-color: white;
+
+}
+
+footer{
+   text-align: center;
+   font-size: 10px;
+}
+
+
+
+#Fline{
+
+height: 2px;
+width: 720px;
+background-color: gainsboro;
+}
+
+#Hline{
+    
+    height: 2px;
+    width: 720px;
+    background-color: gainsboro;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    }
+.r{
+color: black;
+ padding: 10px;
+ text-decoration: none;
+
+}
+
+ul li {  
+display: block;
+
+color: black;
+
+}
+
+
+#home{  
+background-color: #524C47;
+    height: 20px;
+    width: 20px;
+}
+
+#Tn{
+padding-top: 23px;
+padding-bottom: 13px;
+padding-right: 10px;
+height: 10px;
+widows: 20px;
+color: white;
+text-decoration: none;
+background-color: #524C47;
+
+}
+
+
+
+
+#new{
+
+    padding: 10px;
+    height: 10px;
+    widows: 20px;
+    color:black;
+    text-decoration: none;
+    background-color:none;
+    
+
+}
+.other{
+    padding-top: 22px;
+    padding-bottom: 13px;
+    padding-left: 12px;
+    padding-right: 10px;
+    color:white;
+    text-decoration: none;
+    background-color: #B8561E;
+    margin-right: 0px;
+    padding-right: 51px;
+ 
+
+}
+
+
+.LiFont{
+
+font-size: 10px;
+
+
+}
+
+

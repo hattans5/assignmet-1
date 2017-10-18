@@ -1,0 +1,59 @@
+input:focus{
+
+background-color: #8080EE;
+color: white;
+
+
+
+}
+
+input{
+
+    height: 30px;
+
+}
+
+
+#B{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 17px;
+    text-align: center;
+    font-size: 12px;
+     
+   
+  
+}
+
+body{
+
+    background-color: #CFCBCB;
+}
+#main{
+
+    border: 1px solid white;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    margin-right: 300px;
+    margin-left: 300px;
+    background-color: white;
+
+}
+
+#main2{
+ background-position: center;
+
+ border: 1px solid white;
+ margin-top: 0px;
+ margin-bottom: 50px;
+ margin-right: 300px;
+ margin-left: 50px;
+ background-color: white;
+
+}
+
+textarea{
+
+
+}
