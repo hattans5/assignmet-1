@@ -1,3 +1,4 @@
+
 h1{
 
 color: green;
@@ -9,28 +10,15 @@ body{
 }
 #main{
 
-    border: 1px solid white;
-    margin-top: 0px;
-    margin-bottom: 50px;
-    margin-right: 300px;
-    margin-left: 300px;
-    background-color: white;
+    border: 5px solid white;
+     background-color:  white;
+    border-width: auto;
+    margin-right: 15%;
+    margin-left: 15%;
+  
 
 }
-#main2{
-    background-position: center;
-    
-     border: 1px solid white;
-     margin-top: 0px;
-     margin-bottom: 50px;
-     margin-right: 150px;
-     margin-left: 50px;
-     background-color: white;
-    
 
-
-
-}
 
 .bold{
 
@@ -39,13 +27,14 @@ body{
 }
 .bl{
 
-width: 550px;
+width: 95%;
 background-color: #292727;
 color: white;
-padding-top:10px;
-padding-bottom: 8px;
-padding-left: 10px;
-font-size: 10px;
+padding-top:2%;
+padding-bottom: 2%;
+padding-left: 2%;
+
+font-size: 18px;
 font-weight: bold;
 
 }
@@ -55,23 +44,43 @@ font-weight: bold;
 
 }
 table{
+
     border-collapse: collapse;
-    width: 550px;
+    width: 68%;
 }
 
 
-tr:nth-child(odd) {background-color: #f2f2f2}
-th,td {
-    padding: 8px;
-    text-align: left;
-    border-bottom: 0px solid #ddd;
+tr:nth-child(odd) {
+    background-color: #f2f2f2}
 
 
-
-}
 th{
-
+    padding-right: 63%;
     background-color:gray;
     color: white;
 }
+#down{
+ border: 1px solid white;
 
+-webkit-transform: rotate(-180deg); 
+font-size: 40px;
+background-color: white;
+color: gray;
+padding-top: 0;
+
+}
+#up{
+    
+    border: 1px solid white;
+    font-size: 40px;
+    background-color: white;
+    color: gray;
+    padding-bottom: 0;
+}
+
+#counter{
+
+border: 1px solid white;
+margin-left: 5%;
+
+}

@@ -5,32 +5,86 @@
 <link rel="stylesheet" type="text/css" href="newStyle3.css">
 </head>
 <body>
+  <form id="myForm">
 <div id="main">
-    <div id="main2">
-    
-
     <h1>Submit</h1>
     
-<label>Title:
-    <p>   <input name="Title"type="text" size="80" maxlength="45" ></p>
+   <label>Title:
+    <p>   <input name="Title"type="text"  id="T" ></p>
  
-</label>  
-<p></p>
-
-<label>
+   </label></br>
+    <label>
     URL:
-    <p><input name="URL"type="text"size="80" maxlength="45"></p>
+    <p><input name="URL"type="text" ></p>
   
-</label>
+   </label>
 
-<h4>or</h4>
- <label>Text: 
-     <p><textarea name="Text" id="" cols="77" rows="7"></textarea></p>
+  <h4>or</h4>
+   <label>Text: 
+     <p><textarea name="Text" id="Tx" ></textarea></p>
         
- </label>
+   </label>
+
+     <input type="button" value="Submit" id="B" >
+ 
+
+
+     <div id="Out">   <p id="Output" ></p>
+        <p id="Output2" ></p></div>
+
      
-<button id="B"> Submit </button>
+    
 </div>
-</div>
+</form>
+  <script lang="Javascript" type="text/javascript" >
+
+
+
+   var inputT = document.querySelector('input[name=Title]');
+   var inputURL = document.querySelector('input[name=URL]');
+   var btn = document.querySelector('input[type=button]');
+   var output = document.querySelector('#output'); 
+    
+   var count=0;
+   var done = false;
+   var handler= function(even){
+   
+    if (document.getElementById("T").value.length <= 1){
+ document.getElementById("Output").innerHTML = 'Title must filled out' 
+ document.getElementById("Out").style.backgroundColor='red';
+ 
+ }
+ else{
+     count++;
+    document.getElementById("Output").innerHTML = '<br>' }   
+ 
+   if (inputURL.value.length>= 1 || document.getElementById("Tx").value.length >= 1){
+    document.getElementById("Output2").innerHTML = '<br>'
+    count++;
+   
+   } else{
+    document.getElementById("Output2").innerHTML = 'Ether URL or Text field must filled out' 
+    document.getElementById("Out").style.backgroundColor='red';
+   
+    }
+   if (count>1){
+
+    document.getElementById("Out").style.backgroundColor='white';
+    done=true;
+      
+   }
+   if (done =true ){
+
+    ////document.getElementById("myForm").submit();
+   }
+ 
+   }
+ 
+
+
+     btn.addEventListener('click', handler);
+  
+  </script>
+
 </body>
-    </html>
+ </html>

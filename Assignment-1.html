@@ -3,56 +3,201 @@
 <html>
 
 <head>
-<title>TechNews</title>
-<link rel="stylesheet" type="text/css" href="newStyle.css">
+  <title>TechNews</title>
+  <link rel="stylesheet" type="text/css" href="newStyle.css">
 
 </head>
-<body >
+
+<body>
+  <div id="mainDiv1">
     <div id="mainD">
-      
-    <header> 
 
-        <ul></ul>
-       <a id="Tn" href="http:\\www.Tnews.com"> <img id="home" src="home.png"> TNews</a> 
-      <a id = "new" href="http:\\www.New.com">New</a>
 
-        <a class="other"  href="http:\\www.Commens.com">Comments <a class="other" href="http:\\www.Show.com">Show 
-             <a class="other"  href="http:\\www.Ask.com">Ask <a  class="other" href="http:\\www.Jobs.com">Jobs <a class="other" href="http:\\www.SubmitNews.com">Submit News </a></a></a></a></a>
-      
-             <div id="Hline"></div>
-    <p id="main"> Main Stories <code id="date">10/02/2017</code></p>
+      <header>
+
+
+
+        <p id="other">
+          <a id="Tn" href="http:\\www.Tnews.com"> <img id="home" src="home.png"> TNews</a> <a id="new" href="http:\\www.New.com">New</a>
+
+          <a class="other" href="http:\\www.Commens.com">Comments</a>
+          <a class="other" href="http:\\www.Show.com">Show 
+        <a class="other"  href="http:\\www.Ask.com">Ask</a>
+          <a class="other" href="http:\\www.Jobs.com">Jobs </a>
+          <a class="other" href="http:\\www.SubmitNews.com">Submit News </a>
+        </p>
+
+
+        <div id="Hline"></div>
+        <p id="main"> Main Stories <code id="date">10/02/2017</code></p>
+
+        <select id="Sort-selector">
+            <option value="">Select the type</option>
+            <option value="Likes">Likes</option>
+            <option value="Comments">Comments</option>
+            <option value="News">News</option>
+        
        
-     <ul>
-          <li><a class="r" href="http:\\www.Yarn.com"> <img src="https://www.gulf-up.com/d/1508143478851.png" width="10">   Yarn - A new Package manager for JavaScript</a></li>
-      <ul>
-        <li class="LiFont">1 hour ago   | 20 comments</li>
-      
-      </ul> 
-      <div class="line" ></div>  
-         <li ><a class="r" href="http:\\www.Tesseract.com"> <img src="https://www.gulf-up.com/d/1508143478851.png" width="10"> Tesseract - Pure JavaScript OCR for 60 Languages</a></li>
-      <ul>
-        <li class="LiFont">2 hour ago   | 346 comments</li>
        
-      </ul>  
-      <div class="line" ></div>
-      <li ><a class="r" href="http:\\www.Tesseract.com"><img src="https://www.gulf-up.com/d/1508143478851.png" width="10"> Blueprint - A React UI </a></li>
-   <ul>
-     <li class="LiFont">4 hour ago   | 183 comments</li>
-    
-   </ul>  
-   <div class="line" ></div>
-    </header>
+           </select>
 
-<footer>
-    <div id="Fline"></div>
-    <p>&copy;2017 HN Inc. All Right Reserved</p>
- <p id="Footer">    <a class="r" href="http:\\www.P.com">Privact</a> |
-    <a class="r" href="http:\\www.TOF.com">Terms of Use</a> |
-    <a class="r" href="http:\\www.Contact.com">Contact</a> </p>
+        <div id="Hline"></div>
 
 
-</footer>
 
-</div>
+        <form id="Main-F">
+          <ul id="sortable">
+
+          </ul>
+        </form>
+
+
+        <div class="line"></div>
+
+      </header>
+
+      <footer>
+        <div id="Fline"></div>
+        <p>&copy;2017 HN Inc. All Right Reserved</p>
+        <p id="Footer"> <a class="r" href="http:\\www.P.com">Privact</a> |
+          <a class="r" href="http:\\www.TOF.com">Terms of Use</a> |
+          <a class="r" href="http:\\www.Contact.com">Contact</a> </p>
+
+
+      </footer>
+    </div>
+  </div>
 </body>
+
+<script lang="Javascript" type="text/javascript">
+  var ar1 = [], ar2 = [], ar3 = [], ar4 = [], ar5 = [];
+
+  var MainArr = [
+    {
+      title: 'First', url: '<a class="r" href="http:\\www.Yarn.com"> <img src="https://www.gulf-up.com/d/1508143478851.png" width="10">   Yarn - A new Package manager for JavaScript</a>'
+      , likes: 132, comments: 20, date_p: 2017 / 11 / 13, com: "132 like  |  2017/Nov/13  |  20 comments   ",
+    },
+    {
+      title: 'Second', url: '<a class="r" href="http:\\www.Yarn.com"> <img src="https://www.gulf-up.com/d/1508143478851.png" width="10">Tesseract - Pure JavaScript OCR for 60 Languages</a>'
+      , likes: 20, comments: 346, date_p: 2017 / 10 / 29, com: "20 like  |  2017/Oct/29  |  346 comments   "
+    },
+    {
+      title: 'ُThird', url: '<a class="r" href="http:\\www.Yarn.com"> <img src="https://www.gulf-up.com/d/1508143478851.png" width="10">Introducing Creat React</a>'
+      , likes: 52, comments: 36, date_p: 2017 / 5 / 28, com: "52 like  |  2017/May/28  |  36 comments   ",
+    },
+
+    {
+      title: 'Fourth', url: '<a class="r" href="http:\\www.Yarn.com"> <img src="https://www.gulf-up.com/d/1508143478851.png" width="10">Cheatsheet for the modern Java</a>'
+      , likes: 200, comments: 46, date_p: 2017 / 1 / 29, com: "200 like  |  2017/Jan/29  |  46 comments   ",
+    },
+    {
+      title: 'Fifth', url: '<a class="r" href="http:\\www.Yarn.com"> <img src="https://www.gulf-up.com/d/1508143478851.png" width="10">Walmartabs opensource</a>'
+      , likes: 209, comments: 340, date_p: 2017 / 9 / 29, com: "209 like  |  2017/Sep/29  |  340 comments   ",
+    }
+  ]
+
+
+
+  main_form = document.querySelector('#Main-F');
+  var url1 = document.createElement('li');
+  var url2 = document.createElement('ul');
+  var line = document.createElement('div');
+  var main_ul = document.querySelector('#sortable');
+
+ 
+  line = document.getElementById("line")
+  var Selector = document.getElementById("Sort-selector");
+  
+  Selector.onchange = function () {
+    if (Selector.value == "Likes") {
+      document.getElementById("sortable").innerHTML=null;
+      var len = MainArr.length;
+      for (var i = len - 1; i >= 0; i--) {
+        for (var j = 1; j <= i; j++) {
+          if (MainArr[j - 1].likes > MainArr[j].likes) {
+
+            var temp = MainArr[j - 1];
+            MainArr[j - 1] = MainArr[j];
+            MainArr[j] = temp
+          }
+        }
+      }
+
+      for (var i = MainArr.length - 1; i >= 0; i--) {
+
+
+        url1.innerHTML = (MainArr[i].url)
+        main_ul.appendChild(url1)
+        main_ul.innerHTML += '&nbsp&nbsp&nbsp';
+        main_ul.appendChild(url2)
+        url1.innerHTML = (MainArr[i].com)
+        url2.appendChild(url1)
+        main_ul.innerHTML += '&nbsp&nbsp&nbsp';
+       
+       
+        
+       
+
+      }
+    }
+    else if (Selector.value == "Comments") {
+      document.getElementById("sortable").innerHTML=null;
+      var len = MainArr.length;
+      for (var i = len - 1; i >= 0; i--) {
+        for (var j = 1; j <= i; j++) {
+          if (MainArr[j - 1].comments > MainArr[j].comments) {
+
+            var temp = MainArr[j - 1];
+            MainArr[j - 1] = MainArr[j];
+            MainArr[j] = temp
+          }
+        }
+      }
+
+      for (var i = MainArr.length - 1; i >= 0; i--) {
+
+        url1.innerHTML = (MainArr[i].url)
+        main_ul.appendChild(url1)
+        main_ul.innerHTML += '&nbsp&nbsp&nbsp';
+        main_ul.appendChild(url2)
+        url1.innerHTML = (MainArr[i].com)
+        url2.appendChild(url1)
+        main_ul.innerHTML += '&nbsp&nbsp&nbsp';
+       
+
+
+      }
+    }
+    else if (Selector.value == "News") {
+      document.getElementById("sortable").innerHTML=null;
+      var len = MainArr.length;
+      for (var i = len - 1; i >= 0; i--) {
+        for (var j = 1; j <= i; j++) {
+          if (MainArr[j - 1].date_p > MainArr[j].date_p) {
+
+            var temp = MainArr[j - 1];
+            MainArr[j - 1] = MainArr[j];
+            MainArr[j] = temp
+          }
+        }
+      }
+
+      for (var i = MainArr.length - 1; i >= 0; i--) {
+
+        url1.innerHTML = (MainArr[i].url)
+        main_ul.appendChild(url1)
+        main_ul.innerHTML += '&nbsp&nbsp&nbsp';
+        main_ul.appendChild(url2)
+        url1.innerHTML = (MainArr[i].com)
+        url2.appendChild(url1)
+        main_ul.innerHTML += '&nbsp&nbsp&nbsp';
+
+
+      }
+    }
+
+  }
+
+</script>
+
 </html>

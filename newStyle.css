@@ -1,5 +1,6 @@
 #main
-{margin-top: 0px;
+{
+    margin-top: 0px;
     margin-left: 5px;
     color: black}
 #date
@@ -7,18 +8,23 @@
 
 .line{
 height: 1px;
-width: 650px;
+width: 97%;
 background-color: black; 
+margin-top: 1%;
+margin-bottom: 1%;
 margin-left: 20px;
 }
 
 
-#mainD{
- margin: 5px 270px;
 
- background-color: hsl(0, 10%, 94%);
-padding-top: 1px;
-padding-bottom: 2px;
+#mainD{
+border: 1px solid hsl(0, 10%, 94%);
+
+
+margin-right: 5%;
+margin-left: 5%;
+background-color: hsl(0, 10%, 94%);
+padding: auto 75% ;
 }
 
 
@@ -37,17 +43,17 @@ footer{
 #Fline{
 
 height: 2px;
-width: 720px;
+width: auto;
 background-color: gainsboro;
 }
 
 #Hline{
     
     height: 2px;
-    width: 720px;
+    width: auto;
     background-color: gainsboro;
-    margin-top: 15px;
-    margin-bottom: 0px;
+    margin-top: 1%;
+    
     }
 .r{
 color: black;
@@ -66,16 +72,17 @@ color: black;
 
 #home{  
 background-color: #524C47;
-    height: 20px;
-    width: 20px;
+    height: 2%;
+    width: 2%;
 }
 
 #Tn{
-padding-top: 23px;
-padding-bottom: 13px;
-padding-right: 10px;
-height: 10px;
-widows: 20px;
+padding-top: 3%;
+padding-bottom: 2%;
+padding-right: 2%;
+padding-left: 2%;
+margin-right: -4px;
+margin-bottom: -5px;
 color: white;
 text-decoration: none;
 background-color: #524C47;
@@ -87,33 +94,43 @@ background-color: #524C47;
 
 #new{
 
-    padding: 10px;
-    height: 10px;
-    widows: 20px;
+    
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-right: 2%;
+    padding-left:2%;
+    
     color:black;
     text-decoration: none;
-    background-color:none;
+    background-color:hsl(0, 10%, 94%);
     
 
 }
+#other{
+background-color: #B8561E;
+padding-top: 2%;
+padding-bottom: 2%;
+padding-right: 1%;
+margin-top: 0;
+
+}
 .other{
-    padding-top: 22px;
-    padding-bottom: 13px;
-    padding-left: 12px;
-    padding-right: 10px;
+  
+    padding-left: 1%;
+    padding-right: 1%;
+   
     color:white;
     text-decoration: none;
-    background-color: #B8561E;
-    margin-right: 0px;
-    padding-right: 51px;
+   
+  
  
 
 }
 
 
 .LiFont{
-
-font-size: 10px;
+margin-top: 1%;
+font-size: 15px;
 
 
 }
