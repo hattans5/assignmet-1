@@ -56,11 +56,16 @@ background-color: gainsboro;
     
     }
 .r{
-color: black;
- padding: 10px;
+    
+  color: black;
+  margin-top: 5%;
+
  text-decoration: none;
 
 }
+
+
+
 
 ul li {  
 display: block;
@@ -136,3 +141,20 @@ font-size: 15px;
 }
 
 
+a  > ul > li  {
+
+border: 1px solid gray;
+
+
+
+}
+
+.bor{
+
+border: 2px solid #080707;
+border-style: none none solid none;
+padding-left: 5%;
+padding-bottom: 2%;
+padding-top: 2%;
+
+}
